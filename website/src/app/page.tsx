@@ -18,12 +18,22 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </nav>
 
+        
+           
           <a
-            href="#contact"
-            className="bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full"
-          >
-            Get Free Quote
-          </a>
+  
+  href="tel:8049630985"
+  className="mr-4 font-semibold text-[#0b2f4a] hover:text-[#d4af37]"
+>
+  📞 (804) 963-0985
+</a>
+
+<a
+  href="#contact"
+  className="bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
+>
+  Get Free Quote
+</a>
         </div>
       </header>
 
@@ -69,7 +79,7 @@ export default function Home() {
           <div className="flex justify-center">
 
             <Image
-              src="/images/logo2.png"
+              src="/images/headshot pic.png"
               alt="The Gleam Clean Team"
               width={450}
               height={450}
