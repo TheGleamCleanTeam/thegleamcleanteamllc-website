@@ -59,7 +59,7 @@ export default function Home() {
             <div className="mt-10 flex gap-4">
 
               <a
-                href="#contact"
+                href="/book"
                 className="bg-[#d4af37] px-8 py-4 rounded-full text-lg font-semibold"
               >
                 Get Free Quote
