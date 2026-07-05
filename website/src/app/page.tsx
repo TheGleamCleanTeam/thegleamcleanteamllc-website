@@ -29,7 +29,7 @@ export default function Home() {
 </a>
 
 <a
-  href="#contact"
+  href="/book"
   className="bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
 >
   Get Free Quote
