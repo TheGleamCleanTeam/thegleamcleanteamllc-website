@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       return Response.json(error, { status: 400 });
     }
 await resend.emails.send({
-  from: "The Gleam Clean Team <onboarding@resend.dev>",
+  from: "The Gleam Clean Team <bookings@thegleamcleanteamllc.com>",
   to: [email],
   subject: "✨ We've Received Your Cleaning Request",
   html: `
