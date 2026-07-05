@@ -79,7 +79,7 @@ export default function Home() {
           <div className="flex justify-center">
 
             <Image
-              src="/images/headshot pic.png"
+              src="/images/headshot.png"
               alt="The Gleam Clean Team"
               width={450}
               height={450}
