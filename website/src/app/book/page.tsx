@@ -19,10 +19,33 @@ export default function BookPage() {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    alert("Booking request submitted! Email integration will be connected next.");
+  async function handleSubmit(e: React.FormEvent) {
+  e.preventDefault();
+
+  const response = await fetch("/api/send-email", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(form),
+  });
+
+  if (response.ok) {
+    alert("Thank you! Your booking request has been sent.");
+
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      address: "",
+      service: "Standard Cleaning",
+      date: "",
+      notes: "",
+    });
+  } else {
+    alert("Something went wrong. Please try again.");
   }
+}
 
   return (
     <main className="min-h-screen bg-slate-900 text-white">
