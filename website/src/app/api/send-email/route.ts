@@ -35,7 +35,33 @@ export async function POST(request: Request) {
     if (error) {
       return Response.json(error, { status: 400 });
     }
+await resend.emails.send({
+  from: "The Gleam Clean Team <onboarding@resend.dev>",
+  to: [email],
+  subject: "✨ We've Received Your Cleaning Request",
+  html: `
+    <h2>Thank You for Choosing The Gleam Clean Team LLC!</h2>
 
+    <p>Hi <strong>${name}</strong>,</p>
+
+    <p>We have successfully received your cleaning request.</p>
+
+    <h3>Your Request</h3>
+
+    <p><strong>Service:</strong> ${service}</p>
+    <p><strong>Preferred Date:</strong> ${date}</p>
+
+    <p>One of our team members will contact you shortly to confirm your appointment.</p>
+
+    <p>We appreciate the opportunity to serve you and look forward to making your home sparkle!</p>
+
+    <br>
+
+    <p><strong>The Gleam Clean Team LLC</strong></p>
+    <p>📞 (804) 963-0985</p>
+    <p>🌐 https://www.thegleamcleanteamllc.com</p>
+  `,
+});
     return Response.json(data);
   } catch (error) {
     return Response.json(
