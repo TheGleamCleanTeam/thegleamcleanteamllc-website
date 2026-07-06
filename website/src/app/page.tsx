@@ -200,6 +200,36 @@ export default function Home() {
 </div>
         </div>  
       </section>
+            {/* Gallery */}
+      <section id="gallery" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-8">
+
+          <h2 className="text-4xl font-bold text-center text-[#0b3c5d]">
+            Our Recent Work
+          </h2>
+
+          <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
+            See the quality of our work. We'll replace these placeholders with your own cleaning photos.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+
+            <div className="h-80 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500 text-xl shadow-lg">
+              Photo Coming Soon
+            </div>
+
+            <div className="h-80 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500 text-xl shadow-lg">
+              Photo Coming Soon
+            </div>
+
+            <div className="h-80 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500 text-xl shadow-lg">
+              Photo Coming Soon
+            </div>
+
+          </div>
+
+        </div>
+      </section>
     </main>
   );
 }      
