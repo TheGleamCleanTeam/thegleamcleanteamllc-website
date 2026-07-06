@@ -364,6 +364,43 @@ export default function Home() {
 
         </div>
       </section>
+            {/* Footer */}
+      <footer className="bg-[#06263d] text-white py-12">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-10">
+
+          <div>
+            <h3 className="text-2xl font-bold">The Gleam Clean Team LLC</h3>
+            <p className="mt-4 text-gray-300">
+              Professional residential and commercial cleaning services you can trust.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-xl mb-4">Contact</h4>
+            <p>📞 (804) 963-0985</p>
+            <p>✉️ gaskintessa1@gmail.com</p>
+            <p>Richmond, Virginia</p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-xl mb-4">Business Hours</h4>
+            <p>Monday–Friday: 8:00 AM – 5:00 PM</p>
+            <p>Saturday & Sunday: By Appointment</p>
+
+            <a
+              href="/book"
+              className="inline-block mt-6 bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
+            >
+              Book a Cleaning
+            </a>
+          </div>
+
+        </div>
+
+        <div className="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
+          © 2026 The Gleam Clean Team LLC. All Rights Reserved.
+        </div>
+      </footer>
     </main>
   );
 }      
