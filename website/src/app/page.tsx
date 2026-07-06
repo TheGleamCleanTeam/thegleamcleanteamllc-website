@@ -91,7 +91,50 @@ export default function Home() {
         </div>
 
       </section>
+      {/* About */}
+      <section id="about" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-8">
+          <h2 className="text-4xl font-bold text-center text-[#0b3c5d]">
+            About The Gleam Clean Team
+          </h2>
 
+          <p className="mt-8 max-w-3xl mx-auto text-center text-lg text-gray-700 leading-8">
+            The Gleam Clean Team LLC proudly serves Richmond, Virginia and the
+            surrounding communities with dependable residential, commercial,
+            move-in, move-out, Airbnb turnover, and deep cleaning services.
+            Every cleaning is completed with attention to detail, reliability,
+            and professional care so your home or business looks its absolute
+            best.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+              <div className="text-5xl mb-4">🏠</div>
+              <h3 className="text-2xl font-bold mb-3">Residential Cleaning</h3>
+              <p>
+                Weekly, bi-weekly, monthly and one-time home cleaning services.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+              <div className="text-5xl mb-4">🏢</div>
+              <h3 className="text-2xl font-bold mb-3">Commercial Cleaning</h3>
+              <p>
+                Offices, retail spaces and businesses cleaned professionally.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+              <div className="text-5xl mb-4">✨</div>
+              <h3 className="text-2xl font-bold mb-3">Deep Cleaning</h3>
+              <p>
+                Perfect for first-time clients, seasonal cleaning and special
+                occasions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
