@@ -135,55 +135,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
-  );
-}      {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+            {/* Services */}
+      <section id="services" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-4xl font-bold text-center text-[#0b3c5d]">
-            Why Choose The Gleam Clean Team?
+            Our Cleaning Services
           </h2>
 
           <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
-            We believe every customer deserves exceptional service, dependable
-            communication, and a spotless home or business after every visit.
+            We provide reliable, detail-oriented cleaning services tailored to
+            your home or business.
           </p>
 
-          <div className="grid md:grid-cols-4 gap-8 mt-16">
-
-            <div className="bg-[#f8fafc] rounded-2xl shadow-lg p-8 text-center">
-              <div className="text-5xl mb-4">✅</div>
-              <h3 className="text-xl font-bold mb-3">Reliable</h3>
-              <p className="text-gray-600">
-                We arrive on time and treat your home with care and respect.
-              </p>
-            </div>
-
-            <div className="bg-[#f8fafc] rounded-2xl shadow-lg p-8 text-center">
-              <div className="text-5xl mb-4">✨</div>
-              <h3 className="text-xl font-bold mb-3">Attention to Detail</h3>
-              <p className="text-gray-600">
-                Every room is cleaned thoroughly from top to bottom.
-              </p>
-            </div>
-
-            <div className="bg-[#f8fafc] rounded-2xl shadow-lg p-8 text-center">
-              <div className="text-5xl mb-4">🧹</div>
-              <h3 className="text-xl font-bold mb-3">Professional Service</h3>
-              <p className="text-gray-600">
-                Residential, commercial, Airbnb, move-in, move-out and deep
-                cleaning services.
-              </p>
-            </div>
-
-            <div className="bg-[#f8fafc] rounded-2xl shadow-lg p-8 text-center">
-              <div className="text-5xl mb-4">💙</div>
-              <h3 className="text-xl font-bold mb-3">Customer First</h3>
-              <p className="text-gray-600">
-                Your satisfaction is our priority on every cleaning visit.
-              </p>
-            </div>
-
-          </div>
-        </div>
+        </div>  
       </section>
+    </main>
+  );
+}      
