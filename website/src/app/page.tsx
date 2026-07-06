@@ -329,6 +329,38 @@ export default function Home() {
 
         </div>
       </section>
+            {/* Service Areas */}
+      <section id="areas" className="py-20 bg-[#0b3c5d] text-white">
+        <div className="max-w-7xl mx-auto px-8 text-center">
+
+          <h2 className="text-4xl font-bold">
+            Proudly Serving Richmond & Surrounding Areas
+          </h2>
+
+          <p className="mt-6 text-xl text-gray-200">
+            We proudly provide professional cleaning services throughout Central Virginia.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-12 text-lg">
+
+            <div>📍 Richmond</div>
+            <div>📍 Midlothian</div>
+            <div>📍 Chesterfield</div>
+            <div>📍 Henrico</div>
+            <div>📍 Goochland</div>
+            <div>📍 Cumberland</div>
+
+          </div>
+
+          <a
+            href="/book"
+            className="inline-block mt-12 bg-[#d4af37] hover:bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold"
+          >
+            Book Your Cleaning Today
+          </a>
+
+        </div>
+      </section>
     </main>
   );
 }      
