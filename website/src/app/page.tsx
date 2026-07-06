@@ -230,6 +230,63 @@ export default function Home() {
 
         </div>
       </section>
+            {/* Pricing */}
+      <section id="pricing" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-8">
+
+          <h2 className="text-4xl font-bold text-center text-[#0b3c5d]">
+            Transparent Pricing
+          </h2>
+
+          <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
+            Simple, honest pricing with no hidden fees.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold">Standard Cleaning</h3>
+              <p className="text-5xl font-bold text-[#0b3c5d] mt-4">$200</p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold">Deep Cleaning</h3>
+              <p className="text-5xl font-bold text-[#0b3c5d] mt-4">$360</p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold">Move-In / Move-Out</h3>
+              <p className="text-5xl font-bold text-[#0b3c5d] mt-4">$400</p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold">Airbnb Turnover</h3>
+              <p className="text-5xl font-bold text-[#0b3c5d] mt-4">$280</p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold">Commercial Cleaning</h3>
+              <p className="text-5xl font-bold text-[#0b3c5d] mt-4">From $420</p>
+            </div>
+
+            <div className="bg-[#0b3c5d] text-white rounded-2xl shadow-lg p-8 flex flex-col justify-center">
+              <h3 className="text-2xl font-bold">Need Something Custom?</h3>
+              <p className="mt-4">
+                Contact us for a personalized quote based on your cleaning needs.
+              </p>
+
+              <a
+                href="/book"
+                className="inline-block mt-6 bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold text-center"
+              >
+                Request a Quote
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
     </main>
   );
 }      
