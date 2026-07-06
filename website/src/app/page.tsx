@@ -287,6 +287,48 @@ export default function Home() {
 
         </div>
       </section>
+            {/* Reviews */}
+      <section id="reviews" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-8">
+
+          <h2 className="text-4xl font-bold text-center text-[#0b3c5d]">
+            What Our Clients Say
+          </h2>
+
+          <p className="mt-4 text-center text-gray-600">
+            We take pride in delivering exceptional cleaning services.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+
+            <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
+              <div className="text-2xl mb-4">⭐⭐⭐⭐⭐</div>
+              <p className="italic">
+                "Excellent service! My house has never looked this clean. Highly recommend!"
+              </p>
+              <h4 className="font-bold mt-6">— Happy Customer</h4>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
+              <div className="text-2xl mb-4">⭐⭐⭐⭐⭐</div>
+              <p className="italic">
+                "Professional, friendly, and very detailed. We'll definitely book again."
+              </p>
+              <h4 className="font-bold mt-6">— Repeat Client</h4>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
+              <div className="text-2xl mb-4">⭐⭐⭐⭐⭐</div>
+              <p className="italic">
+                "The best cleaning company we've hired. Everything looked amazing!"
+              </p>
+              <h4 className="font-bold mt-6">— Richmond Homeowner</h4>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
     </main>
   );
 }      
