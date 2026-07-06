@@ -146,7 +146,58 @@ export default function Home() {
             We provide reliable, detail-oriented cleaning services tailored to
             your home or business.
           </p>
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 
+  <div className="bg-white rounded-2xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold mb-3">Standard Cleaning</h3>
+    <p className="text-gray-600">
+      Routine cleaning to keep your home fresh, clean, and inviting.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-2xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold mb-3">Deep Cleaning</h3>
+    <p className="text-gray-600">
+      Detailed top-to-bottom cleaning for kitchens, bathrooms, bedrooms, and more.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-2xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold mb-3">Move-In / Move-Out</h3>
+    <p className="text-gray-600">
+      Leave your old home spotless or move into a perfectly clean one.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-2xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold mb-3">Commercial Cleaning</h3>
+    <p className="text-gray-600">
+      Professional office and commercial cleaning customized to your business.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-2xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold mb-3">Airbnb Turnovers</h3>
+    <p className="text-gray-600">
+      Fast, reliable turnover cleaning to keep every guest impressed.
+    </p>
+  </div>
+
+  <div className="bg-[#0b3c5d] text-white rounded-2xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold mb-3">Book Today</h3>
+    <p>
+      Ready for a spotless home or office? Get your free quote today.
+    </p>
+
+    <a
+      href="/book"
+      className="inline-block mt-6 bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
+    >
+      Get Free Quote
+    </a>
+  </div>
+
+</div>
         </div>  
       </section>
     </main>
