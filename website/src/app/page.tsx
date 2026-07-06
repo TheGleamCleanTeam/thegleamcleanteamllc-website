@@ -344,11 +344,14 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mt-12 text-lg">
 
             <div>📍 Richmond</div>
-            <div>📍 Midlothian</div>
-            <div>📍 Chesterfield</div>
-            <div>📍 Henrico</div>
-            <div>📍 Goochland</div>
-            <div>📍 Cumberland</div>
+<div>📍 Midlothian</div>
+<div>📍 Chesterfield</div>
+<div>📍 Henrico</div>
+<div>📍 Powhatan</div>
+<div>📍 Goochland</div>
+<div>📍 Cumberland</div>
+<div>📍 Glen Allen</div>
+<div>📍 Short Pump</div>
 
           </div>
 
