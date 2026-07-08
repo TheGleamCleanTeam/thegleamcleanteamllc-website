@@ -378,7 +378,7 @@ export default function Home() {
           <div>
             <h4 className="font-bold text-xl mb-4">Contact</h4>
             <p>📞 (804) 963-0985</p>
-            <p>✉️ gaskintessa1@gmail.com</p>
+            <p>✉️ thegleamcleanteamllc@gmail.com</p>
             <p>Richmond, Virginia</p>
           </div>
 
