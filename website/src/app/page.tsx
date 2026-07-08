@@ -15,6 +15,7 @@ export default function Home() {
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
+            <a href="/booking-policy">Booking Policy</a>
             <a href="/book">Contact</a>
           </nav>
 
