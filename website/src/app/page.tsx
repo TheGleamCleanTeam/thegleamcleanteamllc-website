@@ -305,12 +305,12 @@ export default function Home() {
             <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
               <div className="text-2xl mb-4">⭐⭐⭐⭐⭐</div>
               <p className="italic">
-                "Excellent service! My house has never looked this clean. Highly recommend!"
+                "I am listing my home in Short Pump for sale next week and used The Gleam Clean Team for a deep clean. They were very thorough, friendly, and hard-working. The owner, Tessa, is so easy to deal with. I highly recommend The Gleam Team for your next cleaning!"
               </p>
-              <h4 className="font-bold mt-6">— Happy Customer</h4>
-            </div>
+              <h4 className="font-bold mt-6">— Dondi Madison</h4>
+            </div> 
 
-            <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
+            <div className="bg-white border-2 border-yellow-400 rounded-2xl shadow-xl p-8">
               <div className="text-2xl mb-4">⭐⭐⭐⭐⭐</div>
               <p className="italic">
                 "Professional, friendly, and very detailed. We'll definitely book again."
