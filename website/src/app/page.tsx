@@ -92,6 +92,48 @@ export default function Home() {
         </div>
 
       </section>
+    
+
+{/* New Customer Special */}
+
+<section className="...">
+  
+</section>
+{/* New Customer Special */}
+<section className="py-16 bg-white">
+  <div className="max-w-5xl mx-auto px-8">
+    <div className="bg-white border-2 border-[#d4af37] rounded-3xl shadow-xl p-10 text-center">
+
+      <p className="text-[#d4af37] font-bold uppercase tracking-[0.2em] text-sm">
+        New Customer Special
+      </p>
+
+      <h2 className="mt-4 text-4xl font-extrabold text-[#0b3c5d]">
+        Save $25 on Your First Cleaning
+      </h2>
+
+      <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        New residential customers can enjoy <strong>$25 OFF</strong> their first
+        professional cleaning service. Experience the quality and attention to
+        detail that makes The Gleam Clean Team LLC stand out.
+      </p>
+
+      <div className="mt-8">
+        <a
+          href="/book"
+          className="inline-block bg-[#d4af37] hover:bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition"
+        >
+          Claim My $25 Discount
+        </a>
+      </div>
+
+      <p className="mt-4 text-sm text-gray-500">
+        *Offer valid for first-time residential customers only.
+      </p>
+
+    </div>
+  </div>
+</section>
       {/* About */}
       <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-8">
