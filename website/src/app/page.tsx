@@ -287,17 +287,29 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 mt-16">
 
-            <div className="h-80 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500 text-xl shadow-lg">
-              Photo Coming Soon
-            </div>
+           <Image
+  src="/images/after dining area.jpeg"
+  alt="Dining Area After Cleaning"
+  width={600}
+  height={450}
+  className="rounded-2xl shadow-lg w-full h-80 object-cover"
+/>
 
-            <div className="h-80 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500 text-xl shadow-lg">
-              Photo Coming Soon
-            </div>
+<Image
+  src="/images/cleaned&glossed floors.jpeg"
+  alt="Glossed Hardwood Floors"
+  width={600}
+  height={450}
+  className="rounded-2xl shadow-lg w-full h-80 object-cover"
+/>
 
-            <div className="h-80 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500 text-xl shadow-lg">
-              Photo Coming Soon
-            </div>
+<Image
+  src="/images/deepcleanedkitchen.jpeg"
+  alt="Deep Cleaned Kitchen"
+  width={600}
+  height={450}
+  className="rounded-2xl shadow-lg w-full h-80 object-cover"
+/>
 
           </div>
 
