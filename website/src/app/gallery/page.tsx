@@ -1,21 +1,25 @@
 import Image from "next/image";
 
-const galleryImages = [
+const projects = [
   {
-    src: "/images/IMG_0685.jpeg",
-    title: "Luxury Bathroom",
+    title: "Living Room Windows",
+    before: "/images/before living room window.jpeg",
+    after: "/images/after-windows&floor living room.jpeg",
   },
   {
-    src: "/images/IMG_0689.jpeg",
-    title: "Kitchen Detail",
-  },
-  {
-    src: "/images/IMG_0690.jpeg",
-    title: "Fresh Kitchen",
-  },
-  {
-    src: "/images/IMG_0691.jpeg",
     title: "Dining Area",
+    before: "/images/before dining area.jpeg",
+    after: "/images/after dining area.jpeg",
+  },
+  {
+    title: "Hardwood Floors",
+    before: "/images/before living room floor.jpeg",
+    after: "/images/cleaned&glossed floors.jpeg",
+  },
+  {
+    title: "Second Living Room Window",
+    before: "/images/before 2nd living room window.jpeg",
+    after: "/images/after-windows&floor living room.jpeg",
   },
 ];
 
@@ -31,55 +35,90 @@ export default function GalleryPage() {
           </span>
 
           <h1 className="text-6xl font-extrabold mb-6">
-            Our Work
+            Before & After Gallery
           </h1>
 
           <div className="w-24 h-1 bg-[#d4af37] mx-auto rounded-full mb-8"></div>
 
           <p className="max-w-3xl mx-auto text-xl text-gray-300 leading-8">
-            Every home deserves exceptional care. Browse a few of our recent
-            cleaning projects and experience the level of detail our clients
-            have come to expect.
+            We take pride in delivering exceptional results. See the difference
+            our professional cleaning services make with these real before and
+            after photos from recent projects.
           </p>
 
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="space-y-12">
 
-          {galleryImages.map((image) => (
+          {projects.map((project) => (
+
             <div
-              key={image.src}
-              className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-2 transition-all duration-500"
+              key={project.title}
+              className="bg-white rounded-3xl shadow-2xl overflow-hidden"
             >
-              <Image
-                src={image.src}
-                alt={image.title}
-                width={900}
-                height={700}
-                className="w-full h-[430px] object-cover hover:scale-105 transition duration-700"
-              />
 
               <div className="p-8">
 
-                <h2 className="text-2xl font-bold text-slate-900">
-                  {image.title}
+                <h2 className="text-3xl font-bold text-[#0b3c5d] text-center">
+                  {project.title}
                 </h2>
 
-                <div className="w-16 h-1 bg-[#d4af37] rounded-full my-4"></div>
+                <div className="w-20 h-1 bg-[#d4af37] rounded-full mx-auto my-5"></div>
 
-                <p className="text-gray-600 leading-7">
-                  Professional residential cleaning completed with attention
-                  to every detail, leaving the space fresh, spotless, and
-                  ready to enjoy.
-                </p>
+                <div className="grid md:grid-cols-2 gap-8">
+
+                  <div>
+
+                    <h3 className="text-center text-red-600 font-bold text-xl mb-4">
+                      BEFORE
+                    </h3>
+
+                    <Image
+                      src={project.before}
+                      alt={`${project.title} Before`}
+                      width={900}
+                      height={700}
+                      className="rounded-2xl shadow-lg w-full h-[420px] object-cover"
+                    />
+
+                  </div>
+
+                  <div>
+
+                    <h3 className="text-center text-green-600 font-bold text-xl mb-4">
+                      AFTER
+                    </h3>
+
+                    <Image
+                      src={project.after}
+                      alt={`${project.title} After`}
+                      width={900}
+                      height={700}
+                      className="rounded-2xl shadow-lg w-full h-[420px] object-cover"
+                    />
+
+                  </div>
+
+                </div>
 
               </div>
+
             </div>
+
           ))}
 
         </div>
 
-        <div className="text-center mt-20">
+        <div className="bg-white rounded-3xl shadow-xl mt-20 p-10 text-center">
+
+          <h2 className="text-4xl font-bold text-[#0b3c5d] mb-6">
+            Ready for Results Like These?
+          </h2>
+
+          <p className="text-gray-600 text-lg mb-8 max-w-3xl mx-auto">
+            Whether you need recurring service, a deep clean, or a move-in/move-out
+            cleaning, The Gleam Clean Team LLC is ready to help make your home shine.
+          </p>
 
           <a
             href="/book"

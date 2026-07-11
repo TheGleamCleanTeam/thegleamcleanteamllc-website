@@ -2,138 +2,168 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen">
 
-      {/* Navigation */}
-      <header className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-2xl font-bold text-[#0b3c5d]">
-            The Gleam Clean Team LLC
+      
+{/* Navigation */}
+<header className="fixed top-0 left-0 w-full z-50">
+  <div className="max-w-7xl mx-auto px-6 pt-6">
+    <div className="backdrop-blur-2xl bg-white/10 border border-white/15 rounded-full px-8 py-4 flex items-center justify-between shadow-2xl">
+
+      <div className="flex items-center gap-4">
+        <Image
+          src="/images/logo.png"
+          alt="The Gleam Clean Team LLC"
+          width={72}
+          height={72}
+          className="rounded-full"
+        />
+
+        <div>
+          <h1 className="text-xl font-bold text-white">
+            The Gleam Clean Team
           </h1>
 
-          <nav className="hidden md:flex gap-8 font-medium">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="/booking-policy">Booking Policy</a>
-            <a href="/book">Contact</a>
-          </nav>
-
-        
-           
-          <a
-  
-  href="tel:8049630985"
-  className="mr-4 font-semibold text-[#0b2f4a] hover:text-[#d4af37]"
->
-  📞 (804) 963-0985
-</a>
-
-<a
-  href="/book"
-  className="bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
->
-  Get Free Quote
-</a>
+          <p className="text-xs uppercase tracking-[0.3em] text-[#f2d67c]">
+            Luxury Cleaning Services
+          </p>
         </div>
-      </header>
+      </div>
 
-      {/* Hero */}
+      <nav className="hidden lg:flex gap-8 font-semibold text-white">
+        <a href="#about" className="hover:text-[#D4AF37] transition">
+          About
+        </a>
 
-      <section className="bg-gradient-to-br from-[#0b3c5d] via-[#1d5c88] to-[#6fa9c9] text-white">
+        <a href="#services" className="hover:text-[#D4AF37] transition">
+          Services
+        </a>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 px-8 py-24">
+        <a href="#gallery" className="hover:text-[#D4AF37] transition">
+          Gallery
+        </a>
 
-          <div>
+        <a
+          href="/booking-policy"
+          className="hover:text-[#D4AF37] transition"
+        >
+          Policy
+        </a>
+      </nav>
 
-            <h2 className="text-5xl font-extrabold leading-tight">
-              Luxury Residential &
-              <br />
-              Commercial Cleaning
+      <a
+        href="/book"
+        className="bg-gradient-to-r from-[#D4AF37] to-[#f2d67c] hover:scale-105 transition px-8 py-3 rounded-full font-bold text-white shadow-lg"
+      >
+        Book Now
+      </a>
+
+    </div>
+  </div>
+</header>
+
+{/* Hero */}
+<section className="relative overflow-hidden pt-48 pb-32">
+
+  <div className="absolute inset-0 bg-gradient-to-br from-[#062644] via-[#173d73] to-[#445f99]" />
+
+  <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+
+    <div>
+
+      <span className="inline-block mb-6 px-5 py-2 rounded-full bg-white/20 text-[#D4AF37] font-semibold tracking-[0.2em] uppercase">
+        Richmond's Luxury Cleaning Company
+      </span>
+
+      <h2 className="text-6xl lg:text-7xl font-black leading-tight text-white">
+        Luxury Cleaning,
+        <br />
+        <span className="text-[#ff5ba7]">
+          Beautiful Results.
+        </span>
+      </h2>
+
+      <p className="mt-8 text-xl leading-10 text-white/90 max-w-2xl">
+        Experience meticulous, detail-focused cleaning for your home or
+        business throughout Richmond and the surrounding areas.
+      </p>
+
+      <div className="mt-12 flex flex-wrap gap-6">
+
+        <a
+          href="/book"
+          className="bg-gradient-to-r from-[#D4AF37] via-[#e5c55a] to-[#f2d67c] hover:scale-105 transition px-10 py-4 rounded-full font-bold text-white shadow-xl"
+        >
+          Book Your Cleaning
+        </a>
+
+        <a
+          href="tel:8049630985"
+          className="glass px-10 py-4 rounded-full font-bold text-white"
+        >
+          📞 (804) 963-0985
+        </a>
+
+      </div>
+
+    </div>
+
+    <div className="relative flex justify-center">
+
+      <div className="glass p-4 rounded-[42px] border border-white/20 shadow-2xl">
+        <Image
+          src="/images/headshot.png"
+          alt="Owner"
+          width={500}
+          height={620}
+          className="rounded-[32px]"
+        />
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      {/* New Customer Special */}
+
+      <section className="py-20">
+
+        <div className="max-w-6xl mx-auto px-8">
+
+          <div className="glass rounded-[40px] p-12 text-center shadow-2xl">
+
+            <span className="uppercase tracking-[0.35em] text-[#D4AF37] font-bold">
+              New Customer Special
+            </span>
+
+            <h2 className="mt-6 text-5xl font-black text-[#082B63]">
+              Save $25 On Your First Cleaning
             </h2>
 
-            <p className="mt-6 text-xl text-gray-200">
-              Professional cleaning services serving Richmond and surrounding
-              areas.
+            <div className="w-24 h-1 bg-[#D4AF37] rounded-full mx-auto my-8"></div>
+
+            <p className="max-w-3xl mx-auto text-xl leading-9 text-slate-700">
+
+              Experience the luxury difference with The Gleam Clean Team LLC.
+              Receive $25 OFF your first residential cleaning and discover why
+              homeowners across Richmond trust us with their homes.
+
             </p>
 
-            <div className="mt-10 flex gap-4">
-
-              <a
-                href="/book"
-                className="bg-[#d4af37] px-8 py-4 rounded-full text-lg font-semibold"
-              >
-                Get Free Quote
-              </a>
-
-              <a
-                href="tel:8049630985"
-                className="border border-white px-8 py-4 rounded-full text-lg"
-              >
-                Call Now
-              </a>
-
-            </div>
-
-          </div>
-
-          <div className="flex justify-center">
-
-            <Image
-              src="/images/headshot.png"
-              alt="The Gleam Clean Team"
-              width={450}
-              height={450}
-              className="rounded-3xl shadow-2xl"
-            />
+            <a
+              href="/book"
+              className="inline-block mt-10 bg-gradient-to-r from-[#D4AF37] to-[#e8c253] hover:scale-105 transition px-10 py-4 rounded-full text-white font-bold shadow-xl"
+            >
+              Claim My Discount
+            </a>
 
           </div>
 
         </div>
 
       </section>
-    
-
-{/* New Customer Special */}
-
-<section className="...">
-  
-</section>
-{/* New Customer Special */}
-<section className="py-16 bg-white">
-  <div className="max-w-5xl mx-auto px-8">
-    <div className="bg-white border-2 border-[#d4af37] rounded-3xl shadow-xl p-10 text-center">
-
-      <p className="text-[#d4af37] font-bold uppercase tracking-[0.2em] text-sm">
-        New Customer Special
-      </p>
-
-      <h2 className="mt-4 text-4xl font-extrabold text-[#0b3c5d]">
-        Save $25 on Your First Cleaning
-      </h2>
-
-      <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-        New residential customers can enjoy <strong>$25 OFF</strong> their first
-        professional cleaning service. Experience the quality and attention to
-        detail that makes The Gleam Clean Team LLC stand out.
-      </p>
-
-      <div className="mt-8">
-        <a
-          href="/book"
-          className="inline-block bg-[#d4af37] hover:bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition"
-        >
-          Claim My $25 Discount
-        </a>
-      </div>
-
-      <p className="mt-4 text-sm text-gray-500">
-        *Offer valid for first-time residential customers only.
-      </p>
-
-    </div>
-  </div>
-</section>
       {/* About */}
       <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-8">
@@ -178,7 +208,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-            {/* Services */}
+      {/* Services */}
       <section id="services" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-4xl font-bold text-center text-[#0b3c5d]">
@@ -189,61 +219,61 @@ export default function Home() {
             We provide reliable, detail-oriented cleaning services tailored to
             your home or business.
           </p>
-<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 
-  <div className="bg-white rounded-2xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold mb-3">Standard Cleaning</h3>
-    <p className="text-gray-600">
-      Routine cleaning to keep your home fresh, clean, and inviting.
-    </p>
-  </div>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-3">Standard Cleaning</h3>
+              <p className="text-gray-600">
+                Routine cleaning to keep your home fresh, clean, and inviting.
+              </p>
+            </div>
 
-  <div className="bg-white rounded-2xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold mb-3">Deep Cleaning</h3>
-    <p className="text-gray-600">
-      Detailed top-to-bottom cleaning for kitchens, bathrooms, bedrooms, and more.
-    </p>
-  </div>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-3">Deep Cleaning</h3>
+              <p className="text-gray-600">
+                Detailed top-to-bottom cleaning for kitchens, bathrooms, bedrooms, and more.
+              </p>
+            </div>
 
-  <div className="bg-white rounded-2xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold mb-3">Move-In / Move-Out</h3>
-    <p className="text-gray-600">
-      Leave your old home spotless or move into a perfectly clean one.
-    </p>
-  </div>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-3">Move-In / Move-Out</h3>
+              <p className="text-gray-600">
+                Leave your old home spotless or move into a perfectly clean one.
+              </p>
+            </div>
 
-  <div className="bg-white rounded-2xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold mb-3">Commercial Cleaning</h3>
-    <p className="text-gray-600">
-      Professional office and commercial cleaning customized to your business.
-    </p>
-  </div>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-3">Commercial Cleaning</h3>
+              <p className="text-gray-600">
+                Professional office and commercial cleaning customized to your business.
+              </p>
+            </div>
 
-  <div className="bg-white rounded-2xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold mb-3">Airbnb Turnovers</h3>
-    <p className="text-gray-600">
-      Fast, reliable turnover cleaning to keep every guest impressed.
-    </p>
-  </div>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-3">Airbnb Turnovers</h3>
+              <p className="text-gray-600">
+                Fast, reliable turnover cleaning to keep every guest impressed.
+              </p>
+            </div>
 
-  <div className="bg-[#0b3c5d] text-white rounded-2xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold mb-3">Book Today</h3>
-    <p>
-      Ready for a spotless home or office? Get your free quote today.
-    </p>
+            <div className="bg-[#0b3c5d] text-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-3">Book Today</h3>
+              <p>
+                Ready for a spotless home or office? Get your free quote today.
+              </p>
 
-    <a
-      href="/book"
-      className="inline-block mt-6 bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
-    >
-      Get Free Quote
-    </a>
-  </div>
+              <a
+                href="/book"
+                className="inline-block mt-6 bg-[#d4af37] hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold"
+              >
+                Get Free Quote
+              </a>
+            </div>
 
-</div>
-        </div>  
+          </div>
+        </div>
       </section>
-            {/* Gallery */}
+      {/* Gallery */}
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-8">
 
@@ -273,7 +303,7 @@ export default function Home() {
 
         </div>
       </section>
-            {/* Pricing */}
+      {/* Pricing */}
       <section id="pricing" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-8">
 
@@ -330,7 +360,7 @@ export default function Home() {
 
         </div>
       </section>
-            {/* Reviews */}
+      {/* Reviews */}
       <section id="reviews" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-8">
 
@@ -350,7 +380,7 @@ export default function Home() {
                 "I am listing my home in Short Pump for sale next week and used The Gleam Clean Team for a deep clean. They were very thorough, friendly, and hard-working. The owner, Tessa, is so easy to deal with. I highly recommend The Gleam Team for your next cleaning!"
               </p>
               <h4 className="font-bold mt-6">— Dondi Madison</h4>
-            </div> 
+            </div>
 
             <div className="bg-white border-2 border-yellow-400 rounded-2xl shadow-xl p-8">
               <div className="text-2xl mb-4">⭐⭐⭐⭐⭐</div>
@@ -372,7 +402,7 @@ export default function Home() {
 
         </div>
       </section>
-            {/* Service Areas */}
+      {/* Service Areas */}
       <section id="areas" className="py-20 bg-[#0b3c5d] text-white">
         <div className="max-w-7xl mx-auto px-8 text-center">
 
@@ -387,14 +417,14 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mt-12 text-lg">
 
             <div>📍 Richmond</div>
-<div>📍 Midlothian</div>
-<div>📍 Chesterfield</div>
-<div>📍 Henrico</div>
-<div>📍 Powhatan</div>
-<div>📍 Goochland</div>
-<div>📍 Cumberland</div>
-<div>📍 Glen Allen</div>
-<div>📍 Short Pump</div>
+            <div>📍 Midlothian</div>
+            <div>📍 Chesterfield</div>
+            <div>📍 Henrico</div>
+            <div>📍 Powhatan</div>
+            <div>📍 Goochland</div>
+            <div>📍 Cumberland</div>
+            <div>📍 Glen Allen</div>
+            <div>📍 Short Pump</div>
 
           </div>
 
@@ -407,7 +437,7 @@ export default function Home() {
 
         </div>
       </section>
-            {/* Footer */}
+      {/* Footer */}
       <footer className="bg-[#06263d] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-10">
 

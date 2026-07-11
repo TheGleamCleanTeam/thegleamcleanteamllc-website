@@ -1,11 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --brand-navy: #04263a;
-  --brand-teal: #0fb9b1;
+  --background: #f8f8f6;
+  --foreground: #102a43;
+
+  /* Brand Colors */
+  --brand-navy: #0b2341;
+  --brand-navy-light: #143b63;
+
   --brand-gold: #d4af37;
+  --brand-gold-light: #e8c96b;
+
+  --brand-pink: #e9b7c7;
+  --brand-pink-light: #f7dce5;
+
+  --glass: rgba(255,255,255,.55);
+  --glass-border: rgba(255,255,255,.28);
+
+  --shadow:
+    0 10px 35px rgba(7,18,35,.10);
+
+  --radius:28px;
 }
 
 @theme inline {
@@ -15,17 +30,116 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+  scroll-behavior:smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background:
+  radial-gradient(circle at top right,#f8dce7 0%,transparent 28%),
+  radial-gradient(circle at bottom left,#d9e9f7 0%,transparent 32%),
+  linear-gradient(180deg,#fdfdfd,#f5f5f2);
+
+  color:var(--foreground);
+
+  font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;
+
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Luxury Glass Cards */
+
+.glass{
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+background:var(--glass);
+
+border:1px solid var(--glass-border);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+}
+
+/* Buttons */
+
+.gold-btn{
+
+background:linear-gradient(
+135deg,
+#d4af37,
+#ebd48a
+);
+
+color:white;
+
+transition:.35s;
+
+box-shadow:
+0 8px 20px rgba(212,175,55,.25);
+
+}
+
+.gold-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 12px 30px rgba(233,183,199,.35);
+
+}
+
+/* Headings */
+
+h1,
+h2,
+h3{
+
+letter-spacing:-.03em;
+
+}
+
+/* Section spacing */
+
+section{
+
+position:relative;
+
+}
+
+/* Luxury Divider */
+
+.divider{
+
+width:80px;
+height:4px;
+
+margin:auto;
+
+background:linear-gradient(
+90deg,
+var(--brand-pink),
+var(--brand-gold)
+);
+
+border-radius:999px;
+
+}
+
+/* Image Cards */
+
+img{
+
+transition:.4s ease;
+
+}
+
+img:hover{
+
+transform:scale(1.02);
+
 }
