@@ -7,27 +7,29 @@ export default function Home() {
       
 {/* Navigation */}
 <header className="fixed top-0 left-0 w-full z-50">
-  <div className="max-w-7xl mx-auto px-6 pt-6">
-    <div className="backdrop-blur-2xl bg-white/10 border border-white/15 rounded-full px-8 py-4 flex items-center justify-between shadow-2xl">
+  <div className="max-w-7xl mx-auto px-4 pt-4 md:px-6 md:pt-6">
+    <div className="backdrop-blur-2xl bg-white/10 border border-white/15 rounded-[40px] px-4 py-3 md:px-8 md:py-4 flex items-center justify-between shadow-2xl">
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
+
         <Image
           src="/images/logo.png"
           alt="The Gleam Clean Team LLC"
-          width={72}
-          height={72}
-          className="rounded-full"
+          width={56}
+          height={56}
+          className="rounded-full md:w-[72px] md:h-[72px]"
         />
 
         <div>
-          <h1 className="text-xl font-bold text-white">
+          <h1 className="text-base md:text-xl font-bold text-white leading-tight">
             The Gleam Clean Team
           </h1>
 
-          <p className="text-xs uppercase tracking-[0.3em] text-[#f2d67c]">
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] md:tracking-[0.3em] text-[#f2d67c]">
             Luxury Cleaning Services
           </p>
         </div>
+
       </div>
 
       <nav className="hidden lg:flex gap-8 font-semibold text-white">
@@ -53,7 +55,7 @@ export default function Home() {
 
       <a
         href="/book"
-        className="bg-gradient-to-r from-[#D4AF37] to-[#f2d67c] hover:scale-105 transition px-8 py-3 rounded-full font-bold text-white shadow-lg"
+        className="bg-gradient-to-r from-[#D4AF37] to-[#f2d67c] hover:scale-105 transition text-sm md:text-base px-5 py-3 md:px-8 md:py-3 rounded-full font-bold text-white shadow-lg whitespace-nowrap"
       >
         Book Now
       </a>
